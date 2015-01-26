@@ -9,7 +9,7 @@ win.add(label);
 win.open();
 
 // write your module tests here
-var tiflurry = require('com.sofisoftwarellc.tiflurry');
+var tiflurry = require('com.stepupsoftware.tiflurry');
 Ti.API.info("module is => " + tiflurry);
 
 tiflurry.setContinueSessionMillis(5000);

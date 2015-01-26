@@ -1,6 +1,6 @@
 Logfile initialized
 [INFO] logfile = /Projects/Sofi/TiFlurry/test/build.log
-[DEBUG] /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/builder.py simulator testFlurry /Projects/android-sdk-mac_86 /Projects/Sofi/TiFlurry/test com.sofisoftwarellc.tiflurry.test 15 WXGA800 
+[DEBUG] /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/builder.py simulator testFlurry /Projects/android-sdk-mac_86 /Projects/Sofi/TiFlurry/test com.stepupsoftware.tiflurry.test 15 WXGA800 
 [INFO] Building testFlurry for Android ... one moment
 [INFO] Titanium SDK version: 3.0.0 (12/12/12 18:49 a5894b3)
 [DEBUG] Waiting for device to be ready ...
@@ -37,9 +37,9 @@ Logfile initialized
 [DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
 [DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
 [TRACE] adb devices returned 1 devices/emulators
-[DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/modules/android/com.sofisoftwarellc.tiflurry/1.0.1/lib/FlurryAgent.jar => com/flurry/org/codehaus/jackson/map/VERSION.txt
-[DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/modules/android/com.sofisoftwarellc.tiflurry/1.0.1/lib/FlurryAgent.jar => com/flurry/org/codehaus/jackson/impl/VERSION.txt
-[DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/modules/android/com.sofisoftwarellc.tiflurry/1.0.1/lib/FlurryAgent.jar => com/flurry/org/apache/avro/data/Json.avsc
+[DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/modules/android/com.stepupsoftware.tiflurry/1.0.1/lib/FlurryAgent.jar => com/flurry/org/codehaus/jackson/map/VERSION.txt
+[DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/modules/android/com.stepupsoftware.tiflurry/1.0.1/lib/FlurryAgent.jar => com/flurry/org/codehaus/jackson/impl/VERSION.txt
+[DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/modules/android/com.stepupsoftware.tiflurry/1.0.1/lib/FlurryAgent.jar => com/flurry/org/apache/avro/data/Json.avsc
 [DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
 [DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
 [DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
@@ -60,9 +60,9 @@ Logfile initialized
 [DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
 [DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
 [DEBUG] from JAR /Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
-[DEBUG] installing native lib: /Users/eherrman/Library/Application Support/Titanium/modules/android/com.sofisoftwarellc.tiflurry/1.0.1/libs/armeabi/libcom.sofisoftwarellc.tiflurry.so
-[DEBUG] installing native lib: /Users/eherrman/Library/Application Support/Titanium/modules/android/com.sofisoftwarellc.tiflurry/1.0.1/libs/armeabi-v7a/libcom.sofisoftwarellc.tiflurry.so
-[DEBUG] installing native lib: /Users/eherrman/Library/Application Support/Titanium/modules/android/com.sofisoftwarellc.tiflurry/1.0.1/libs/x86/libcom.sofisoftwarellc.tiflurry.so
+[DEBUG] installing native lib: /Users/eherrman/Library/Application Support/Titanium/modules/android/com.stepupsoftware.tiflurry/1.0.1/libs/armeabi/libcom.stepupsoftware.tiflurry.so
+[DEBUG] installing native lib: /Users/eherrman/Library/Application Support/Titanium/modules/android/com.stepupsoftware.tiflurry/1.0.1/libs/armeabi-v7a/libcom.stepupsoftware.tiflurry.so
+[DEBUG] installing native lib: /Users/eherrman/Library/Application Support/Titanium/modules/android/com.stepupsoftware.tiflurry/1.0.1/libs/x86/libcom.stepupsoftware.tiflurry.so
 [DEBUG] installing native SDK libs
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
@@ -97,7 +97,7 @@ Logfile initialized
 [TRACE] adb devices returned 1 devices/emulators
 [TRACE] adb devices returned 1 devices/emulators
 [ERROR] Timed out waiting for emulator to be ready, you may need to close the emulator and try again
-[DEBUG] com.sofisoftwarellc.tiflurry.test installed? False
+[DEBUG] com.stepupsoftware.tiflurry.test installed? False
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying CommonJS modules...
 [INFO] Copying project resources..
@@ -127,11 +127,11 @@ Logfile initialized
 [DEBUG] copying /Projects/Sofi/TiFlurry/test/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Projects/Sofi/TiFlurry/test/build/android/res/drawable-notlong-port-mdpi/background.png
 [DEBUG] found splash screen at /Projects/Sofi/TiFlurry/test/build/android/bin/assets/Resources/default.png
 [TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/R.java to javac build list
-[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/TestflurryActivity.java to javac build list
-[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/TestflurryAppInfo.java to javac build list
-[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/TestflurryApplication.java to javac build list
-[DEBUG] Building Java Sources: "/Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/R.java" "/Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/TestflurryActivity.java" "/Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/TestflurryAppInfo.java" "/Projects/Sofi/TiFlurry/test/build/android/gen/com/sofisoftwarellc/tiflurry/test/TestflurryApplication.java"
+[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/R.java to javac build list
+[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/TestflurryActivity.java to javac build list
+[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/TestflurryAppInfo.java to javac build list
+[DEBUG] adding /Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/TestflurryApplication.java to javac build list
+[DEBUG] Building Java Sources: "/Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/R.java" "/Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/TestflurryActivity.java" "/Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/TestflurryAppInfo.java" "/Projects/Sofi/TiFlurry/test/build/android/gen/com/stepupsoftware/tiflurry/test/TestflurryApplication.java"
 [ERROR] Exception occured while building Android project:
 [ERROR] Traceback (most recent call last):
 [ERROR]   File "/Users/eherrman/Library/Application Support/Titanium/mobilesdk/osx/3.0.0.GA/android/builder.py", line 2376, in <module>

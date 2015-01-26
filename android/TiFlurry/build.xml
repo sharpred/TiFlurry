@@ -1,23 +1,13 @@
 <project name="TiFlurry" default="dist">
-	<description>
-		Ant build script for Titanium Android module TiFlurry
-	</description>
-
-	<property name="ti.module.root" location="${basedir}"/>
-
-	<!-- This allows (and requires) use of ANDROID_SDK, ANDROID_NDK, and TITANIUM_SDK environment variables to build -->
-	<property environment="env"/>
-
-	<property file="build.properties" />
-
-	<import file="${titanium.platform}/../module/android/build.xml"/>
-
-	<target name="install" description="Installs the module into the Titanium directory" depends="dist">
- 		<ti.string property="module.id" string="${manifest.moduleid}" tolowercase="true"/>
-		<echo message="${titanium.dir} file=${dist}/${module.id}-android-${manifest.version}.zip"/>
-		
-	    <copy todir="${titanium.dir}" file="${dist}/${module.id}-android-${manifest.version}.zip">
-		</copy>
-	</target>
-
+    <description>Ant build script for Titanium Android module TiFlurry</description>
+    <property name="ti.module.root" location="${basedir}"/>
+    <!-- This allows (and requires) use of ANDROID_SDK, ANDROID_NDK, and TITANIUM_SDK environment variables to build -->
+    <property environment="env"/>
+    <property file="build.properties" />
+    <import file="${titanium.platform}/../module/android/build.xml"/>
+    <target name="install" description="Installs the module into the Titanium directory" depends="dist">
+        <ti.string property="module.id" string="${manifest.moduleid}" tolowercase="true"/>
+        <echo message="${titanium.dir} file=${dist}/${module.id}-android-${manifest.version}.zip"/>
+        <copy todir="${titanium.dir}" file="${dist}/${module.id}-android-${manifest.version}.zip"></copy>
+    </target>
 </project>

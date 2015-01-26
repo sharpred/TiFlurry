@@ -10,7 +10,7 @@
  * and licensed under the Apache Public License (version 2)
  * http://www.apache.org/licenses/LICENSE-2.0.html
  */
-package com.sofisoftwarellc.tiflurry;
+package com.stepupsoftware.tiflurry;
 
 import java.util.HashMap;
 
@@ -46,7 +46,7 @@ import com.flurry.android.FlurryAgent;
  * @author Eric Herrmann, Sofi Software LLC
  */
 
-@Kroll.module(name="Tiflurry", id="com.sofisoftwarellc.tiflurry")
+@Kroll.module(name="Tiflurry", id="com.stepupsoftware.tiflurry")
 public class TiflurryModule extends KrollModule
 {
 

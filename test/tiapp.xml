@@ -8,7 +8,7 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>3.0.0.GA</sdk-version>
-    <id>com.sofisoftwarellc.tiflurry.test</id>
+    <id>com.stepupsoftware.tiflurry.test</id>
     <name>testFlurry</name>
     <version>1.0</version>
     <publisher>eherrman</publisher>
@@ -46,7 +46,7 @@
         <theme>default</theme>
     </mobileweb>
     <modules>
-        <module platform="iphone" version="1.0.1">com.sofisoftwarellc.tiflurry</module>
-        <module platform="android" version="1.0.1">com.sofisoftwarellc.tiflurry</module>
+        <module platform="iphone" version="1.0.1">com.stepupsoftware.tiflurry</module>
+        <module platform="android" version="1.0.1">com.stepupsoftware.tiflurry</module>
     </modules>
 </ti:app>

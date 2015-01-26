@@ -12,7 +12,7 @@ Version 1.0 of TiFlurry integrates:
 
 To access this module from JavaScript, you would do the following:
 
-	var tiflurry = require("com.sofisoftwarellc.tiflurry");
+	var tiflurry = require("com.stepupsoftware.tiflurry");
 
 The tiflurry variable is a reference to the Module object.	
 
@@ -24,7 +24,7 @@ uniform across iOS and Android.
 
 ## Usage
 
-	var tiflurry = require('com.sofisoftwarellc.tiflurry');
+	var tiflurry = require('com.stepupsoftware.tiflurry');
 	Ti.API.info("module is => " + tiflurry);
 
 	tiflurry.setContinueSessionMillis(1000);
