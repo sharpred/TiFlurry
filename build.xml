@@ -1,35 +1,18 @@
-<project name="TiFlurry" default="dist">
-	<description>
-		Ant build script for Titanium modules TiFlurry
-	</description>
-
-	<target name="clean-android">
-		<ant dir="android/TiFlurry" target="clean"/>
-	</target>
-	
-	<target name="clean" depends="clean-android">
-	</target>
-
-	<target name="dist-android">
-		<ant dir="android/TiFlurry"/>
-	</target>
-	
-	<target name="dist" depends="dist-android">
-	</target>
-
-	<target name="install-android">
-		<copy file="android/TiFlurry/dist/com.stepupsoftware.tiflurry-android-1.0.1.zip" todir="${user.home}/Library/Application Support/Titanium"/>
-	</target>
-	
-	<target name="install" depends="install-android">
-	</target>
-
-	<target name="package">
-		<delete file="com.stepupsoftware.tiflurry-android-1.0.1-iphone-1.0.1.zip" quiet="true"/>
-		<delete dir="dist/modules" quiet="true"/>
-		<copy file="android/TiFlurry/dist/com.stepupsoftware.tiflurry-android-1.0.1.zip" todir="dist"/>
-		<unzip src="dist/com.stepupsoftware.tiflurry-android-1.0.1.zip" dest="dist"/>
-		<zip destfile="dist/com.stepupsoftware.tiflurry-android-1.0.1-iphone-1.0.1.zip" basedir="dist/modules"/>
-	</target>
-	
+<project name="TiFlurry" default="both">
+    <description>Ant build script for Titanium modules TiFlurry</description>
+    <property environment="env"/>
+    <property file="build.properties" />
+    <target name="ios">
+        <exec dir="${basedir}/ios/TiFlurry" executable="${titanium.build}" failonerror="true"/>
+        <move file="${module.ios.binary}" todir="${basedir}/ios/TiFlurry/dist"/>
+    </target>
+    <target name="android">
+        <exec dir="${basedir}/android/TiFlurry" executable="ant" failonerror="true"/>
+    </target>
+    <target name="test">
+        <exec dir="${basedir}/ios/TiFlurry" executable="${titanium.py}" failonerror="true">
+            <arg line="run"/>
+        </exec>
+    </target>
+    <target name="both" depends="ios, android"/>
 </project>

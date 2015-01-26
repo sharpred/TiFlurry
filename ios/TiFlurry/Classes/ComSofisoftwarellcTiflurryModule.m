@@ -27,7 +27,8 @@
 // You must also change the matching entry in "manifest".
 -(id)moduleGUID
 {
-	return @"8089a91b-487e-4054-aed5-b9be2670f588";
+	//return @"8089a91b-487e-4054-aed5-b9be2670f588";
+    return @"eee66e46-d04d-4c73-95ac-808ae8207cd6";
 }
 
 // this is generated for your module, please do not change it
@@ -123,15 +124,6 @@ void uncaughtExceptionHandler(NSException *exception)
 	BOOL setting = [TiUtils boolValue:args];
 
 	[Flurry setSessionReportsOnPauseEnabled:setting];
-}
-
-- (void)setSecureTransportEnabled:(id)args
-{
-	ENSURE_SINGLE_ARG(args, NSNumber);
-    
-	BOOL setting = [TiUtils boolValue:args];
-    
-	[Flurry setSecureTransportEnabled:setting];
 }
 
 - (void)setEventLoggingEnabled:(id)args
